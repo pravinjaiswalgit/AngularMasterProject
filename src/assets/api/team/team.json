@@ -1,0 +1,70 @@
+[
+    {
+        "AssociateId" : 10,
+        "Name" : "John Doe",
+        "BaseLocation":"IND Pune",
+        "CurrentLocation":"USA - NJ",
+        "Designation":"Sr. Developer",
+        "Summery":"Summery Information.",
+        "DateOfJoining":"01-Jan-2020",
+        "CurrentStatus":"Active",
+        "ImageUrl":"assets/images/team/10.jpg"       
+    },
+    {
+        "AssociateId" : 11,
+        "Name" : "Ram Doe",
+        "BaseLocation":"IND Pune",
+        "CurrentLocation":"USA - NJ",
+        "Designation":"Sr. Developer",
+        "Summery":"Summery Information.",
+        "DateOfJoining":"01-Jan-2020",
+        "CurrentStatus":"Active",
+        "ImageUrl":"assets/images/team/11.jpg"
+        
+    },
+    {
+        "AssociateId" : 12,
+        "Name" : "Kim Doe",
+        "BaseLocation":"IND Pune",
+        "CurrentLocation":"USA - NJ",
+        "Designation":"Sr. Developer",
+        "Summery":"Summery Information.",
+        "DateOfJoining":"01-Jan-2020",
+        "CurrentStatus":"Active",
+        "ImageUrl":"assets/images/team/12.jpg"
+        
+    },
+    {
+        "AssociateId" : 13,
+        "Name" : "Pam Doe",
+        "BaseLocation":"IND Pune",
+        "CurrentLocation":"USA - NJ",
+        "Designation":"Sr. Developer",
+        "Summery":"Summery Information.",
+        "DateOfJoining":"01-Jan-2020",
+        "CurrentStatus":"Active",
+        "ImageUrl":"assets/images/team/13.jpg"
+    },
+    {
+        "AssociateId" : 14,
+        "Name" : "Shera Doe",
+        "BaseLocation":"IND Pune",
+        "CurrentLocation":"USA - NJ",
+        "Designation":"Sr. Developer",
+        "Summery":"Summery Information.",
+        "DateOfJoining":"01-Jan-2020",
+        "CurrentStatus":"Active",
+        "ImageUrl":"assets/images/team/14.jpg"
+    },
+    {
+        "AssociateId" : 15,
+        "Name" : "Nam Doe",
+        "BaseLocation":"IND Pune",
+        "CurrentLocation":"USA - NJ",
+        "Designation":"Sr. Developer",
+        "Summery":"Summery Information.",
+        "DateOfJoining":"01-Jan-2020",
+        "CurrentStatus":"Active",
+        "ImageUrl":"assets/images/team/15.jpg"
+    }
+]

@@ -1,0 +1,62 @@
+<!-- <div class="container">
+    <div class="row text-center d-flex justify-content-center pt-2 mb-1">
+        <div class="col-sm-4">
+            <b><a routerLink="productdetails"> Product Details Page !!!!!</a></b>
+        </div>
+    </div>
+
+    <div class="row text-center d-flex justify-content-center pt-2 mb-1">
+        <div class="col-sm-4">
+              
+            <a routerLink='productdetails'>Product 1</a>
+        </div>
+    </div>
+    <div class="row text-center d-flex justify-content-center pt-2 mb-1">
+        <div class="col-sm-4">
+            <a routerLink="productdetails">Product 2</a>
+        </div>
+    </div>
+</div> -->
+
+<!-- 
+Best Example !!!!!!!
+https://stackblitz.com/angular/ekpmqrepqjx?file=src%2Fapp%2Fapp-routing.module.ts 
+-->
+
+<div class="container">
+    <div class="row text-center d-flex justify-content-center pt-2 mb-1">
+        <div class="col-sm-4">
+            <!-- <a [routerLink]="['productlanginsubsection']">{{ title }}</a>  -->
+            <b>{{ title }}</b>
+        </div>
+    </div>
+    <div *ngFor='let product of products'>
+        <div class="row text-left d-flex justify-content-letf pt-2 mb-1">
+            <div class="col-sm-2">
+                <!-- <a [routerLink]="['productdetails/',product.ProductId]">{{product.Name}}</a>  -->
+                <a [routerLink]="['productdetails',product.ProductId]">
+                    {{product.Name}}
+                </a> 
+            </div>
+            <div class="col-sm-1">
+                {{product.CategoryId}}              
+            </div>
+            <div class="col-sm-1">
+                {{product.Brand}}             
+            </div>
+            <div class="col-sm-4">
+                {{product.Summery}}             
+            </div>
+            <div class="col-sm-1">
+                {{product.RetailRate}}           
+            </div>    
+        </div>
+    </div>
+</div> 
+
+
+<div class='container'>
+    <router-outlet></router-outlet>
+</div>
+
+

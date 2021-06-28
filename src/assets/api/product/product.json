@@ -1,0 +1,88 @@
+[
+    {
+        "ProductId" : 10,
+        "Name" : "Product 10",
+        "CategoryId" : 1,
+        "Brand":"Cello",
+        "Delear":"Raj Group",
+        "DeliveryLocation":"Pune",
+        "Summery":"Procut Detail Information.",
+        "BaseRate":"100",
+        "RetailRate":"120",
+        "StockQty":"100",
+        "ProductStatus":"Active",
+        "ImageUrl":"assets/images/team/10.jpg"       
+    },
+    {
+        "ProductId" : 11,
+        "Name" : "Product 11",
+        "CategoryId" : 1,
+        "Brand":"Cello",
+        "Delear":"Raj Group",
+        "DeliveryLocation":"Pune",
+        "Summery":"Procut Detail Information.",
+        "BaseRate":"100",
+        "RetailRate":"120",
+        "StockQty":"100",
+        "ProductStatus":"Active",
+        "ImageUrl":"assets/images/team/10.jpg"    
+        
+    },
+    {
+        "ProductId" : 12,
+        "Name" : "Product 12",
+        "CategoryId" : 1,
+        "Brand":"Cello",
+        "Delear":"Raj Group",
+        "DeliveryLocation":"Pune",
+        "Summery":"Procut Detail Information.",
+        "BaseRate":"100",
+        "RetailRate":"120",
+        "StockQty":"100",
+        "ProductStatus":"Active",
+        "ImageUrl":"assets/images/team/10.jpg"    
+        
+    },
+    {
+        "ProductId" : 13,
+        "Name" : "Product 13",
+        "CategoryId" : 1,
+        "Brand":"Cello",
+        "Delear":"Raj Group",
+        "DeliveryLocation":"Pune",
+        "Summery":"Procut Detail Information.",
+        "BaseRate":"100",
+        "RetailRate":"120",
+        "StockQty":"100",
+        "ProductStatus":"Active",
+        "ImageUrl":"assets/images/team/10.jpg"    
+    },
+    {
+        "ProductId" : 14,
+        "Name" : "Product 14",
+        "CategoryId" : 1,
+        "Brand":"Cello",
+        "Delear":"Raj Group",
+        "DeliveryLocation":"Pune",
+        "Summery":"Procut Detail Information.",
+        "BaseRate":"100",
+        "RetailRate":"120",
+        "StockQty":"100",
+        "ProductStatus":"Active",
+        "ImageUrl":"assets/images/team/10.jpg"    
+    },
+    {
+        "ProductId" : 15,
+        "Name" : "Product 15",
+        "CategoryId" : 1,
+        "Brand":"Cello",
+        "Delear":"Raj Group",
+        "DeliveryLocation":"Pune",
+        "Summery":"Procut Detail Information.",
+        "BaseRate":"100",
+        "RetailRate":"120",
+        "StockQty":"100",
+        "ProductStatus":"Active",
+        "ImageUrl":"assets/images/team/10.jpg"    
+    }
+]

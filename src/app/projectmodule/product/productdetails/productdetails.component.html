@@ -1,0 +1,32 @@
+
+    <div class="card">
+        <div class="card-body" *ngFor='let p of product'>
+            <div class="card-header">
+                <b>{{ pageTitle }}</b>
+        </div>
+        <div class="row">
+            <div class="col-md-2"> Product Name :</div>
+            <div class="col-md-8"> {{ p?.Name }}</div>
+        </div>
+            <div class="row">
+                <div class="col-md-2">  Brand  :</div>
+                <div class="col-md-8"> {{ p?.Brand }}</div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"> Delear :</div>
+                <div class="col-md-8"> {{ p?.Delear }}</div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"> DeliveryLocation :</div>
+                <div class="col-md-8"> {{ p?.DeliveryLocation }}</div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"> Summery :</div>
+                <div class="col-md-8"> {{ p?.Summery }}</div>
+            </div>
+        </div>
+
+        <div class="card-footer">
+            <button (click)="onBack()"> Back</button>
+        </div>
+    </div>
