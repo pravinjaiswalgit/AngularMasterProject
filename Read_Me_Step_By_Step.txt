@@ -1,8 +1,25 @@
+All About GIT : 
+ONLY For GIT : 
+
+Gmail Login : 
+pravinjaiswalgit@gmail.com
+Ram@123x
+
+GIT : 
+https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html
+https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html
+https://github.com/pravinjaiswalgit
+Git UID and PWD
+pravinjaiswalgit
+Ram@123x
+------------------------------------------------------------
+
+
 Git Step By Step : 
 
 To Login GIT : 
 pravinjaiswalgit@gmail.co.in
-India@123#x
+Ram@123x
 https://github.com/
 
 
@@ -18,12 +35,13 @@ git remote add origin https://github.com/pravinjaiswalgit/AngularMasterProject.g
 git push -u origin main
 
 UID : pravinjaiswalgit
-PWD : India@123#x
+PWD : Ram@123x
 
 2. push an existing repository from the command line
 git remote add origin https://github.com/pravinjaiswalgit/AngularMasterProject.git
 git branch -M main
 git push -u origin main
+
 
 
 
