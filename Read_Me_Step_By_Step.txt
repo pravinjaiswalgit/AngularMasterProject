@@ -32,7 +32,7 @@ git add.
 git status
 git commit -m "Add Comment"
 git push
-UID : pravinjaiswalgit@gmail.co.in
+UID : pravinjaiswalgit
 PWD : India@123#x
 ==================================
 
