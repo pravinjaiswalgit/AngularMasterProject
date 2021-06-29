@@ -28,8 +28,12 @@ git push -u origin main
 
 
 To update Changes in GIT once repository is created :
- 
-
+git add.
+git status
+git commit -m "Add Comment"
+git push
+UID : pravinjaiswalgit@gmail.co.in
+PWD : India@123#x
 ==================================
 
 
