@@ -1,3 +1,39 @@
+Git Step By Step : 
+
+To Login GIT : 
+pravinjaiswalgit@gmail.co.in
+India@123#x
+https://github.com/
+
+
+D:\Development\Angular\MyAngular_Study\Document\Source\AngularMasterProject
+
+1. create a new repository on the command line
+echo "# AngularMasterProject" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/pravinjaiswalgit/AngularMasterProject.git
+git push -u origin main
+
+UID : pravinjaiswalgit
+PWD : India@123#x
+
+2. push an existing repository from the command line
+git remote add origin https://github.com/pravinjaiswalgit/AngularMasterProject.git
+git branch -M main
+git push -u origin main
+
+
+
+To update Changes in GIT once repository is created :
+ 
+
+==================================
+
+
+
 To Create New Angular Project : 
 ==================================
 Step 0 : Required Node : 
@@ -201,7 +237,9 @@ ng g c component/home/home --flat
 ==================================
 Sample Code Start : 
 
-page-not-found
+//page-not-found component : 
+ng g c sample/page-not-found --flat --dry-run
+
 
 
 

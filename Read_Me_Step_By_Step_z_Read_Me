@@ -1,8 +1,37 @@
+To Login GIT : 
+pravinjaiswalgit@gmail.co.in
+India@123#x
+https://github.com/
+
+
+D:\Development\Angular\MyAngular_Study\Document\Source\AngularMasterProject
+
+1. create a new repository on the command line
+echo "# AngularMasterProject" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/pravinjaiswalgit/AngularMasterProject.git
+git push -u origin main
+
+UID : pravinjaiswalgit
+PWD : India@123#x
+
+2. push an existing repository from the command line
+git remote add origin https://github.com/pravinjaiswalgit/AngularMasterProject.git
+git branch -M main
+git push -u origin main
+
+
+-------------------------------------------------------------
+
 // Ceate Project
 D:\AngularTraining\T2F\Public Web>ng new T2F 
 
 go to T2F folder:
 D:\AngularTraining\T2F\Public Web\T2F\src\T2F>ng server -o
+
 
 git init
 git status
