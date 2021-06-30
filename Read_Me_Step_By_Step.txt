@@ -1,6 +1,41 @@
 All About GIT : 
 ONLY For GIT : 
 
+------
+Good Website of Git Study : 
+https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html
+
+
+Configure Git
+git config -- global user.name "pravinjaiswalgit"
+
+// This will fetch code from GIT... No Need to download code...
+git clone https://github.com/pravinjaiswalgit/AngularMasterProject.git
+
+CD AngularMasterProject
+
+
+//Convert a local directory into a repository
+git init
+
+
+git status
+
+git commit -m "Comment"
+
+
+git push
+pravinjaiswalgit
+Ram@123x
+
+
+Token : To Unlock
+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
+
+
+---------
+
+
 Gmail Login : 
 pravinjaiswalgit@gmail.com
 Ram@123x
@@ -13,7 +48,10 @@ Git UID and PWD
 pravinjaiswalgit
 Ram@123x
 ------------------------------------------------------------
-
+Run Code After we download code from Git : 
+npm install
+ng serve --o
+------------------------------------------------------------
 
 Git Step By Step : 
 
@@ -44,14 +82,16 @@ git push -u origin main
 
 
 
-
 To update Changes in GIT once repository is created :
-git add.
+git add .
 git status
 git commit -m "Add Comment"
 git push
 UID : pravinjaiswalgit
 PWD : India@123#x
+
+
+
 ==================================
 
 
