@@ -1,0 +1,305 @@
+docker Account details : 
+Username:ram1234x
+Password:Ram@123456x
+
+
+
+https://medium.com/codingthesmartway-com-blog/docker-beginners-guide-part-1-images-containers-6f3507fffc98
+
+docker --version : display docker version
+--------------
+docker images : display all images
+--------------
+docker pull hello-world : to pull images
+How to get image name (hello-world)?
+https://hub.docker.com
+search for : hello-wolrd 
+it will display result with command to pull : docker pull kseta/hello-wolrd or docker pull hello-wolrd
+--------------
+docker run hello-world
+This will check does hello-world exits ? 
+A: If exits : It will create conatiner for Image.
+B: If does not exits it will search image @ hub.conatiner.com and if exits it pull image from & create container.
+
+This will pull Image
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+--------------
+docker ps -a
+display all container and images associate with container
+--------------
+docker ps -a : Lists containers (and tells you which images they are spun from)
+--------------
+docker container ls -a : display all container 
+--------------
+docker images : Lists images 
+--------------
+docker rm <container_id> : Removes a stopped container
+--------------
+docker rm -f <container_id> : Forces the removal of a running container (uses SIGKILL)
+--------------
+docker rmi <image_id> : Removes an image. This will fail if there is a running instance of that image i.e. container
+--------------
+docker rmi -f <image_id> : Forces removal of image even if it is referenced in multiple repositories, 
+i.e. same image id given multiple names/tags 
+Will still fail if there is a docker container referencing image
+--------------
+docker container ls -a : List all container
+--------------
+docker images ls -a : List all Images
+--------------
+docker pull hello-world : ONLY Pull hello-world (This will not create conatiner)
+--------------
+docker images : Display created images
+
+--------------
+docker container ls : display container
+
+--------------
+docker container ps : display container
+
+--------------
+docker rmi hello-world : delete all images with name hello-world
+--------------
+docker run hello-world : Pull image from Docker and create container
+--------------
+docker image ls 
+REPOSITORY    TAG       IMAGE ID       CREATED        SIZE
+hello-world   latest    d1165f221234   4 months ago   13.3kB
+--------------
+docker container ls
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+--------------
+docker container ls -a
+CONTAINER ID   IMAGE         COMMAND    CREATED          STATUS                      PORTS     NAMES
+6988c51da1f8   hello-world   "/hello"   57 seconds ago   Exited (0) 53 seconds ago             elated_germain
+--------------
+docker container start <container_id> : Start container with <container_id>
+
+--------------
+docker container stop <container_id> : Stop Container with container name
+--------------
+docker rmi hello-world
+to remove STOP container ONLY. This command will NOT remove Running container.
+--------------
+docker rmi-f hello-world
+to remove image forcefully even container running
+--------------------------------
+docker container restart hello-world : start container with name : hello-world
+--------------------------------
+docker container restart 2ede3r232s : start container with name : hello-world
+
+--------------------------------
+docker container stop 2ede3r232s : Stop container by container id
+ 
+--------------------------------
+docker container stop 2ede3r232s hello-world : Stop multiple container using one command
+--------------------------------
+docker container prune : WARNING! This will remove all stopped containers.
+Are you sure you want to continue? [y/N]
+--------------------------------
+docker system prune --all
+WARNING! This will remove:
+  - all stopped containers
+  - all networks not used by at least one container
+  - all images without at least one container associated to them
+  - all build cache
+
+Are you sure you want to continue? [y/N]
+--------------------------------
+To Create Docker file Image : File Name needs to be : Dockerfile
+Create folder : D:\..\04 Training\DockerTraining\
+Create file : Dockerfile [No file extension]
+Add following code to Dockerfile : 
+
+****************** Dockerfile Start ******
+From ubuntu
+
+Run apt-get update
+
+Run apt-get install git -y 
+****************** Dockerfile End ******
+
+Explination : 
+ubuntu
+git
+
+
+Go to folder : D:\..\04 Training\DockerTraining\ 
+Run Following Command : docker build -t my-image .
+. : File in same folder 
+
+If file in different folder in that case : 
+docker build -t my-image -f PATH
+
+Validate : 
+D:\Work 1\04 Training\DockerTraining>docker image ls
+REPOSITORY   TAG       IMAGE ID       CREATED          SIZE
+my-image     latest    354652586be0   49 seconds ago   204MB
+
+D:\Work 1\04 Training\DockerTraining>docker container ls -a
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
+Create Container from above Image : 
+
+D:\Work 1\04 Training\DockerTraining>docker container run my-image
+
+D:\Work 1\04 Training\DockerTraining>docker container ls -a
+CONTAINER ID   IMAGE      COMMAND   CREATED          STATUS                      PORTS     NAMES
+1facbf6490b0   my-image   "bash"    15 seconds ago   Exited (0) 12 seconds ago             vigilant_elgamal
+
+Run Container : 
+docker container run -i -d my-image
+
+validate : 
+D:\Work 1\04 Training\DockerTraining>docker container ls
+CONTAINER ID   IMAGE      COMMAND   CREATED          STATUS          PORTS     NAMES
+7d0a1a481d1d   my-image   "bash"    29 seconds ago   Up 26 seconds             unruffled_volhard
+
+
+Execute : 
+docker container run -i -d my-image
+
+D:\Work 1\04 Training\DockerTraining>docker container ls
+CONTAINER ID   IMAGE      COMMAND   CREATED          STATUS          PORTS     NAMES
+7d0a1a481d1d   my-image   "bash"    29 seconds ago   Up 26 seconds             unruffled_volhard
+
+D:\Work 1\04 Training\DockerTraining>docker container exec -it 7d0a1a481d1d bash
+root@7d0a1a481d1d:/#
+
+
+Validate : Does Git Instlled or NOT ?
+
+D:\Work 1\04 Training\DockerTraining>docker container exec -it 7d0a1a481d1d bash
+root@7d0a1a481d1d:/# git --version
+git version 2.25.1
+root@7d0a1a481d1d:/#
+
+-------------------------------
+
+How to Share Git Image  : docker login
+
+D:\Work 1\04 Training\DockerTraining>docker login
+Login with your Docker ID to push and pull images from Docker Hub. If you don't have a Docker ID, head over to https://hub.docker.com to create one.
+Username: ram1234x
+Password:
+Login Succeeded
+
+-------------------------------
+To Add image to docker : docker image tag my-image ram1234x/my-image 
+
+
+
+D:\Work 1\04 Training\DockerTraining>docker push my-image
+Using default tag: latest
+The push refers to repository [docker.io/library/my-image]
+c9937b294d78: Preparing
+5deaa90f7a66: Preparing
+a70daca533d0: Preparing
+denied: requested access to the resource is denied
+
+
+
+--------------------------------
+To push image to docker : docker push ram1234x/my-image
+
+
+--------------------------------
+
+--------------------------------
+docker run --name my-nginx -d -p 3000:80 nginx
+--------------------------------
+docker container ls -a
+docker image ls
+docker container rm <container_id>
+docker image rm <image_id>
+--------------------------------
+
+--------------------------------
+
+--------------------------------
+
+
+--------------------------------
+
+--------------------------------
+
+--------------------------------
+
+--------------------------------
+
+--------------------------------
+
+--------------------------------
+
+--------------------------------
+
+--------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+docker –version
+docker images
+docker images -ls
+docker pull hello-world
+docker images ls
+docker images
+
+docker rmi hello-world
+docker container ls
+docker container ps
+docker container ls --all
+
+docker run xyz
+docker run redis
+docker images
+docker container ls -a
+docker container restart hello-world
+docker container restart 2ede3r232s
+docker container stop 2ede3r232s
+docker container stop 2ede3r232s hello-world
+docker container rm 2ede3r232s 
+docker container -ls a
+docker container prune
+Are you sure you want to continue [y/n] y
+-------------------
+
+docker image stop
+docker image rm image ID / image Name : Not possible to Delete in case cotainer running
+
+
+
+
+docker container start
+docker container stop
+docker container rm Container ID / Container Name : Not possible to Delete in case cotainer running
+
+Focefully remove :
+docker container 
